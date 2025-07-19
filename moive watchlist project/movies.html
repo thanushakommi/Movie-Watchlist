@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Movies • Watchlist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>🎬 My Movie Watchlist</h1>
+    <input type="text" id="searchInput" placeholder="Search by title…" autofocus />
+    <select id="statusFilter">
+      <option value="">All</option>
+      <option value="To Watch">To Watch</option>
+      <option value="Watching">Watching</option>
+      <option value="Watched">Watched</option>
+    </select>
+    <button id="searchBtn">Search</button>
+    <a href="index.html" class="link-btn">＋ Add Movie</a>
+  </header>
+
+  <section>
+    <h2 style="text-align:center; margin-top:2rem;">Movie Collection</h2>
+    <div id="movieList" class="grid"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

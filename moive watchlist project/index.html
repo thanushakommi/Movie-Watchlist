@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Movie Watchlist</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header>
+    <h1>🎬 Movie Watchlist</h1>
+    <!-- 🔍 search redirects to movies.html -->
+    <input type="text" id="searchInput" placeholder="Search by title…" />
+    <select id="statusFilter">
+      <option value="">All</option>
+      <option value="To Watch">To Watch</option>
+      <option value="Watching">Watching</option>
+      <option value="Watched">Watched</option>
+    </select>
+    <button id="searchBtn">Search</button>
+    <!-- quick link if user just wants to browse -->
+    <a href="movies.html" class="link-btn">🎞 View Collection</a>
+  </header>
+
+  <!-- ➕ add movie form -->
+  <section id="addMovieForm">
+    <h2>Add Movie</h2>
+    <form id="movieForm">
+      <input type="text" id="title" placeholder="Title" required />
+      <input type="text" id="genre" placeholder="Genre" required />
+      <input type="number" id="year" placeholder="Release Year" required />
+      <input type="number" id="rating" placeholder="Rating (0‑5)" required />
+      <input type="url" id="poster" placeholder="Poster Image URL" required />
+      <input type="url" id="trailer" placeholder="YouTube Trailer URL" required />
+      <select id="status">
+        <option>To Watch</option>
+        <option>Watching</option>
+        <option>Watched</option>
+      </select>
+      <button type="submit">Add Movie</button>
+    </form>
+  </section>
+
+  <!-- subtle toast → gets injected by script -->
+  <div id="toast" class="toast"></div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
